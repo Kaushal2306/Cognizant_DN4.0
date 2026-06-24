@@ -1,18 +1,42 @@
-## Getting Started
+# Exercise 1: Implementing the Singleton Pattern
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Objective
 
-## Folder Structure
+Implement the Singleton Design Pattern in Java to ensure that only one instance of a Logger class exists throughout the application lifecycle.
 
-The workspace contains two folders by default, where:
+## Files
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+* `Logger.java` - Implements the Singleton Pattern.
+* `TestLogger.java` - Tests the Singleton implementation.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Singleton Pattern
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+The Singleton Pattern is a creational design pattern that ensures:
 
-## Dependency Management
+1. Only one instance of a class is created.
+2. A global access point is provided to access that instance.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Implementation Details
+
+### Logger Class
+
+* Private static instance variable stores the single object.
+* Private constructor prevents object creation from outside the class.
+* Public static `getInstance()` method returns the same object every time.
+
+### TestLogger Class
+
+* Retrieves the Logger instance multiple times.
+* Verifies that the same object is returned.
+* Demonstrates logging functionality.
+
+## Expected Output
+
+Logger instance created.
+Log: First message
+Log: Second message
+Only one Logger instance exists.
+
+## Author
+
+Kaushal Amara
