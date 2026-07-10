@@ -1,0 +1,21 @@
+<dependencies>
+
+    <!-- Spring Context -->
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context</artifactId>
+    </dependency>
+
+    <!-- Spring AOP -->
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-aop</artifactId>
+    </dependency>
+
+    <!-- Spring Web MVC -->
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-webmvc</artifactId>
+    </dependency>
+
+</dependencies>
